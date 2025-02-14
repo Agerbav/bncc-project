@@ -1,4 +1,9 @@
 ## How to Start
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
