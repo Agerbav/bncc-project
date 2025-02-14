@@ -1,3 +1,4 @@
+
 ## How to Start 
 
 1. Clone the repository
@@ -21,5 +22,28 @@ php artisan migrate
 php artisan db:seed
 ```
 
-7. Go to localhost:8000[localhost:8000]
+7. Go to [localhost:8000](localhost:8000)
+
+
+## Seeders
+Admin account:
+```
+email: admin@email.com
+password: admin
+```
+
+User account:
+```
+email: user1@email.com
+password: password
+```
+Categories:
+- Electronics
+- Food
+- Household Essentials
+- Fashion
+- Beverages
+- Furniture
+- Beauty and Personal Care
+- Toys and Hobbies
  
