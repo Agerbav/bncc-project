@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg p-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">BNCC Shop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
-            <a href="/cart" type= 'button' class="btn btn-primary-outline">Cart <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : 0 }}</span></a>
+            <a href="/cart" type= 'button' class="btn btn-primary">Cart <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : 0 }}</span></a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="/login">Login</a>
@@ -29,10 +29,14 @@
         </ul>
       </div>
       <div class="d-flex flex-flow-revers">
-          @if (Auth::user()->role_id == 1)
-            <a href="/admin-page" class="btn btn-primary-outline">Admin page</a>
-          @endif
-          <a href="/logout" class="btn btn-primary-outline" type="button" >Logout</a>
+        <div class="mx-3">
+            @if (Auth::user()->role_id == 1)
+              <a href="/admin-page" class="btn btn-primary">Admin page</a>
+            @endif
+        </div>
+        <div>
+          <a href="/logout" class="btn btn-danger" type="button" >Logout</a>
+        </div>
       </div>
     </div>
   </nav>
