@@ -7,7 +7,12 @@
 
 3. Create database with name "bncc_project"
 
-4. Start laravel local server
+4. Start composer install
+```
+composer install
+```
+
+6. Start laravel local server
 ```
 php artisan serve
 ```
